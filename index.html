@@ -1,0 +1,251 @@
+<!-- index.html
+     Página principal (landing) com hero grande + seções.
+     Comentários explicativos incluídos em cada bloco.
+-->
+<!doctype html>
+<!-- 
+Define o tipo do documento como HTML5.
+Isso evita comportamentos estranhos nos navegadores.
+-->
+
+<html lang="en">
+  <!-- 
+Elemento raiz do HTML.
+lang="en" ajuda acessibilidade, SEO e leitores de tela.
+-->
+
+  <head>
+    <!-- 
+    Área de configurações da página.
+    Nada aqui aparece visualmente.
+    -->
+
+    <meta charset="UTF-8" />
+    <!-- 
+    Define o padrão de caracteres.
+    UTF-8 permite acentos, emojis e caracteres especiais.
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+    Essencial para responsividade.
+    Faz o layout se adaptar ao tamanho da tela.
+    -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- 
+    Biblioteca de ícones (Remix Icon).
+    Permite usar ícones com <i class="ri-..."></i>
+    -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- 
+    Importa o arquivo CSS principal do projeto.
+    -->
+
+    <title>Fanta website Landing Page</title>
+    <!-- 
+    Título da aba do navegador.
+    Importante para SEO.
+    -->
+  </head>
+
+  <body>
+    <!-- 
+    Corpo da página.
+    Tudo que aparece visualmente fica aqui.
+    -->
+
+    <div id="main">
+      <!-- 
+      Container principal que envolve TODO o site.
+      Facilita controle de layout e animações globais.
+      -->
+
+      <!-- ===================== -->
+      <!-- NAVBAR / MENU SUPERIOR -->
+      <!-- ===================== -->
+      <nav>
+        <!-- 
+        Barra de navegação fixa no topo.
+        -->
+
+        <a href="#">CODEWITHSHOBHIT</a>
+        <!-- 
+        Logo ou nome da marca.
+        Normalmente leva para a home.
+        -->
+
+        <div class="cntr-nav">
+          <!-- 
+          Container central do menu.
+          Usado para alinhar os links com flexbox.
+          -->
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Shop</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <i class="ri-menu-fill"></i>
+        <!-- 
+        Ícone de menu (hambúrguer).
+        Normalmente usado para mobile.
+        -->
+      </nav>
+
+      <!-- ===================== -->
+      <!-- SECTION ONE (HERO)    -->
+      <!-- ===================== -->
+      <div class="one">
+        <!-- 
+        Seção principal (Hero).
+        Primeira impressão do site.
+        -->
+
+        <h1>FANTA</h1>
+        <!-- 
+        Texto gigante decorativo.
+        Usado como elemento visual de fundo.
+        -->
+
+        <!-- Elementos gráficos decorativos -->
+        <img id="orange-cut" src="assets/orange2.png" alt="" />
+        <!-- Laranja cortada -->
+
+        <img id="fanta" src="assets/fanta.png" alt="" />
+        <!-- Lata principal -->
+
+        <img id="orange" src="Assets/orange.webp" alt="" />
+        <!-- Laranja inteira -->
+
+        <img id="leaf" src="Assets/leaf.webp" alt="" />
+        <img id="leaf2" src="Assets/leaf2.png" alt="" />
+        <img id="leaf3" src="Assets/coconoutleaf.png" alt="" />
+        <!-- Folhas decorativas -->
+      </div>
+
+      <!-- ===================== -->
+      <!-- SECTION TWO (CONTEÚDO) -->
+      <!-- ===================== -->
+      <div class="two">
+        <!-- 
+        Seção informativa.
+        Layout em duas colunas.
+        -->
+
+        <div class="lft-two">
+          <!-- 
+          Coluna esquerda.
+          Contém um SVG decorativo.
+          -->
+
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- 
+            SVG inline.
+            Permite animações e controle via CSS/JS.
+            -->
+            <path
+              fill="#e04428"
+              d="M41.5,-59.5C49.8,-51.1,49.7,-33.6,50.7,-19.2C51.7,-4.7,53.8,6.7,52.4,18.9C51.1,31.1,46.3,44.1,36.9,52.9C27.6,61.8,13.8,66.5,-2.5,70C-18.8,73.4,-37.7,75.6,-52.5,68.5C-67.3,61.5,-78.2,45.2,-84.5,27.1C-90.9,9,-92.7,-10.8,-80.5,-19.3C-68.3,-27.8,-42.1,-24.8,-26.3,-30.8C-10.6,-36.8,-5.3,-51.7,5.7,-59.5C16.6,-67.3,33.2,-68,41.5,-59.5Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
+
+        <div class="rght-two">
+          <!-- 
+          Coluna direita.
+          Texto informativo da landing page.
+          -->
+
+          <h1>Flavour Updated</h1>
+          <!-- Título da seção -->
+
+          <p>
+            <!-- Texto descritivo (placeholder) -->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam,
+            excepturi sed, itaque placeat id natus soluta veniam obcaecati qui a
+            laborum laboriosam dolorem illum labore sit, voluptates commodi
+            neque dolores tempore temporibus deleniti? Nobis, ratione hic error
+            quis cum neque nulla laudantium nostrum sit nihil dolorum quisquam
+            enim quaerat, eaque ex sequi, harum totam quia non! Labore, neque!
+            Amet voluptatem illo similique recusandae! Ex quaerat quibusdam
+            asperiores, ducimus tempore magni labore. Tenetur voluptas, quos ex
+            repellendus provident mollitia laboriosam adipisci alias a impedit,
+            cum accusamus rerum delectus eaque facilis veniam quia laborum
+            incidunt ea assumenda! Eos magni aspernatur quod distinctio.
+          </p>
+        </div>
+      </div>
+
+      <!-- ===================== -->
+      <!-- SECTION THREE (CARDS) -->
+      <!-- ===================== -->
+      <div class="three">
+        <!-- 
+        Seção de produtos.
+        Cards alinhados horizontalmente.
+        -->
+
+        <!-- CARD 1 -->
+        <div class="card">
+          <div class="img-box">
+            <!-- Container que controla o tamanho da imagem -->
+            <img class="fanta-uva" src="assets/Fanta-uva.png" alt="Fanta Uva" />
+          </div>
+          <h1>Fanta Grape</h1>
+          <button>Buy Now</button>
+        </div>
+
+        <!-- CARD 2 (central) -->
+        <div class="card">
+          <div class="img-box">
+            <!-- Container que controla o tamanho da imagem -->
+          </div>
+          <h1>Orange Fanta</h1>
+          <button>Buy Now</button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+          <div class="img-box">
+            <img
+              class="green-apple"
+              src="assets/Fanta-maçã-verde.png"
+              alt="Fanta Maçã Verde"
+            />
+          </div>
+          <h1>Fanta Green Apple</h1>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- BIBLIOTECAS JS        -->
+    <!-- ===================== -->
+
+    <!-- GSAP (animações) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- ScrollTrigger (animações no scroll) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Script principal do projeto -->
+    <script src="script.js"></script>
+  </body>
+</html>

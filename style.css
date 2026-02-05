@@ -1,0 +1,293 @@
+/* ============================= */
+/* FONTES PERSONALIZADAS         */
+/* ============================= */
+
+/* Fonte principal usada no projeto */
+@font-face {
+     font-family: Product Sans;
+     src: url(Fonts/Product\ Sans\ Regular.ttf);
+}
+
+/* Versão bold da fonte (para títulos grandes) */
+@font-face {
+     font-family: Product Sans B;
+     src: url(Fonts/Product\ Sans\ Bold.ttf);
+}
+
+/* ============================= */
+/* RESET GLOBAL                  */
+/* ============================= */
+
+/* Remove margens padrão, define box-model e fonte base */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Product Sans;
+}
+
+/* Garante que html e body ocupem a tela toda */
+html,
+body {
+     height: 100%;
+     width: 100%;
+}
+
+/* Remove a barra de rolagem (efeito visual mais limpo) */
+body::-webkit-scrollbar {
+     display: none;
+}
+
+/* ============================= */
+/* CONTAINER PRINCIPAL           */
+/* ============================= */
+
+/* Wrapper principal do site */
+#main {
+     width: 100%;
+     height: 100vh;
+     background-color: orangered;
+}
+
+/* ============================= */
+/* NAVBAR FIXA                   */
+/* ============================= */
+
+nav {
+     position: fixed;              /* Fixa no topo */
+     display: flex;                /* Layout flexível */
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+     height: 10vh;
+     padding: 0vw 10vw;
+     z-index: 99;                  /* Sempre acima dos elementos */
+}
+
+/* Estilo dos links e ícones */
+nav a,
+i {
+     font-size: 1vw;
+     text-decoration: none;
+     color: #fff;
+}
+
+/* Container central do menu */
+.cntr-nav {
+     display: flex;
+     gap: 3vw;
+}
+
+/* Ícones do menu */
+nav i {
+     font-size: 1.5vw;
+}
+
+/* ============================= */
+/* SECTION ONE (HERO)            */
+/* ============================= */
+
+.one {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 100vh;
+     background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+     position: relative;   /* Base para posicionamento absoluto interno */
+}
+
+/* Texto grande "FANTA" */
+.one h1 {
+     font-size: 25vw;              /* Responsivo ao tamanho da tela */
+     font-family: Product Sans B;
+     color: #fff;
+}
+
+/* ============================= */
+/* ELEMENTOS DECORATIVOS (HERO)  */
+/* ============================= */
+
+/* Lata principal */
+#fanta {
+     position: absolute;
+     width: 40%;
+     z-index: 2;                   /* Fica à frente do texto */
+     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+/* Laranja cortada */
+#orange-cut {
+     position: absolute;
+     top: 10%;
+     left: 32%;
+     width: 15%;
+     z-index: 1;                   /* Atrás da lata */
+     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+/* Laranja inteira */
+#orange {
+     position: absolute;
+     width: 20%;
+     z-index: 3;                   /* Mais à frente */
+     top: 55%;
+     right: 30%;
+     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+/* Folha esquerda */
+#leaf {
+     position: absolute;
+     top: 10%;
+     left: 0%;
+     transform: rotate(60deg);
+     width: 18%;
+     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+/* Folha central superior */
+#leaf2 {
+     position: absolute;
+     top: -220px;                  /* Sobe o elemento */
+     left: 50%;
+     transform: translateX(-50%) rotate(-90deg);
+     width: 55px;
+     z-index: 3;
+     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Folha direita */
+#leaf3 {
+     position: absolute;
+     width: 20%;
+     top: 10%;
+     right: 0%;
+}
+
+/* ============================= */
+/* SECTION TWO                   */
+/* ============================= */
+
+.two {
+     display: flex;
+     width: 100%;
+     height: 100vh;
+     background: #4d231c;
+}
+
+/* Colunas esquerda e direita */
+.lft-two,
+.rght-two {
+     display: flex;
+     align-items: flex-start;
+     justify-content: center;
+     flex-direction: column;
+     gap: 5vh;
+     width: 50%;
+     height: 100%;
+}
+
+/* SVG decorativo */
+.lft-two svg {
+     margin-top: 50vh;
+     width: 90%;
+     transform: rotateX(50deg);
+}
+
+/* Texto da direita */
+.rght-two h1 {
+     color: #fff;
+     font-size: 5vw;
+}
+
+.rght-two p {
+     font-size: 1vw;
+     color: #fff;
+     width: 80%;
+}
+
+/* ============================= */
+/* SECTION THREE (PRODUTOS)      */
+/* ============================= */
+
+.three {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+     gap: 4vw;
+     padding-bottom: 8vh;
+     background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+
+/* ============================= */
+/* CARD DE PRODUTO               */
+/* ============================= */
+
+.card {
+     position: relative;
+     width: 22vw;
+     height: 60vh;
+     background: #fff;
+     border-radius: 24px;
+     padding: 2vh 1.5vw;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Animação ao passar o mouse */
+.card:hover {
+     transform: translateY(-15px);
+     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Caixa da imagem */
+.img-box {
+     width: 180px;
+     height: 220px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+/* Imagem do produto */
+.img-box img {
+     max-width: 100%;
+     max-height: 100%;
+     object-fit: contain;
+}
+
+/* Zoom suave no hover */
+.card:hover .img-box img {
+     transform: scale(1.05);
+     transition: 0.3s;
+}
+
+/* Título do card */
+.card h1 {
+     font-size: 2vw;
+     margin-top: 1vh;
+}
+
+/* Botão */
+.card button {
+     padding: 0.9vw 2.5vw;
+     border-radius: 50px;
+     border: none;
+     background: orange;
+     color: white;
+     font-size: 1vw;
+     font-weight: bold;
+     cursor: pointer;
+     transition: background 0.3s ease;
+}
+
+.card button:hover {
+     background: orangered;
+}
+
