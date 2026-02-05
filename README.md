@@ -11,7 +11,7 @@ Projeto de landing page inspirado na marca **Fanta**, desenvolvido com foco em *
 - CSS3
 - JavaScript
 - Flexbox
-- Design responsivo
+- Design Responsivo
 
 ## 🎯 Objetivo do projeto
 Praticar:
