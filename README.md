@@ -7,6 +7,7 @@ Projeto de landing page inspirado na marca **Fanta**, desenvolvido com foco em *
   <img src="./assets/img-github.png" alt="Preview do projeto" />
 </p>
 ## 🚀 Tecnologias utilizadas
+
 - HTML5
 - CSS3
 - JavaScript
@@ -22,10 +23,9 @@ Este projeto foi desenvolvido com o objetivo de praticar e consolidar conhecimen
 - Organização de código front-end
 
 ## 🖥️ Como executar
-```bash
 git clone https://github.com/adilsonribeiroalmeida/fanta-landing-page.git
 cd fanta-landing-page
 
 ## 🌐 Projeto Online
+🔗 **Acesse aqui:**  
 👉 https://adilsonribeiroalmeida.github.io/fanta-landing-page/
-
